@@ -127,30 +127,8 @@ input[type=number]{-moz-appearance:textfield;}
 button{font-family:inherit;cursor:pointer;touch-action:manipulation;border:none;background:none;color:var(--text);transition:transform var(--tr-fast), opacity var(--tr-fast);}
 button:active{opacity:.8;}
 #app{min-height:100vh;}
-/* Layout */
-.sticky-hdr{position:sticky;top:0;z-index:300;background:var(--card);border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,0.08);}
-.hdr-inner{padding:4px 12px 4px;max-width:540px;margin:0 auto;}
-.tab-bar{display:flex;background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:77px;z-index:290;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;}
 .tab-bar::-webkit-scrollbar{display:none;}
-.tab-btn{flex-shrink:0;padding:11px 10px;font-size:10px;color:var(--muted);cursor:pointer;border-bottom:2.5px solid transparent;font-weight:600;background:none;white-space:nowrap;letter-spacing:0.03em;}
-.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary);font-weight:800;}
-.page{padding:12px 12px 100px;max-width:540px;margin:0 auto;}
-/* Cards */
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,0.05);overflow:hidden;}
-.card-hd{padding:10px 14px;border-bottom:1px solid var(--border);background:var(--bg);display:flex;justify-content:space-between;align-items:center;}
-.card-hd-title{font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;}
-.card-bd{padding:12px 14px;display:flex;flex-direction:column;gap:9px;}
-/* Form elements */
-.inp{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:10px 13px;font-size:15px;color:var(--text);width:100%;}
-.inp-sm{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:7px 10px;font-size:15px;color:var(--text);width:100%;}
-.lbl{font-size:10px;color:var(--sub);margin-bottom:4px;display:block;font-weight:700;letter-spacing:0.06em;}
-.add-btn{background:var(--bg);border:1.5px dashed var(--border);border-radius:11px;padding:11px;font-size:13px;color:var(--sub);width:100%;text-align:center;}
-.hbtn{background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:6px 12px;font-size:11px;color:var(--sub);font-weight:700;white-space:nowrap;}
-.pbtn{background:linear-gradient(135deg,var(--theme1),var(--theme2));border:none;border-radius:12px;padding:13px;font-size:14px;font-weight:800;color:#fff;width:100%;}
 .ibtn{border-radius:8px;padding:5px 11px;font-size:11px;font-weight:700;border:1.5px solid var(--border);background:var(--bg);color:var(--sub);}
-/* Item boxes */
-.item-box{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:11px 12px;position:relative;display:flex;flex-direction:column;gap:8px;}
-.del-btn{position:absolute;top:8px;right:8px;background:rgba(208,58,58,0.1);border:1px solid rgba(208,58,58,0.25);color:var(--red);width:26px;height:26px;border-radius:7px;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 /* Grid */
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;}
@@ -159,26 +137,19 @@ button:active{opacity:.8;}
 .badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;display:inline-block;}
 .tag{font-size:10px;font-weight:600;padding:3px 8px;border-radius:20px;display:inline-block;border:1.5px solid;}
 /* Summary row */
-.srow{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.srow{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
 .srow:last-child{border-bottom:none;}
-.sum-box{border-radius:12px;padding:11px 15px;display:flex;justify-content:space-between;align-items:center;}
+.sum-box{border-radius:14px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;}
 /* Toggle */
 .toggle{width:36px;height:22px;border-radius:11px;display:flex;align-items:center;padding:2px 3px;cursor:pointer;transition:background .2s;flex-shrink:0;}
 .toggle-knob{width:18px;height:18px;border-radius:9px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);transition:transform .2s;}
 /* Dropdown */
 .dd-wrap{position:relative;}
-.dd-trigger{background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:8px 11px;font-size:14px;color:var(--text);width:100%;display:flex;justify-content:space-between;align-items:center;cursor:pointer;min-height:38px;}
-.dd-list{position:absolute;top:calc(100% + 3px);left:0;right:0;z-index:9999;background:var(--card);border:1.5px solid var(--border);border-radius:11px;box-shadow:0 8px 28px rgba(0,0,0,0.15);overflow:hidden;max-height:200px;overflow-y:auto;}
-.dd-item{padding:9px 13px;font-size:13px;font-weight:600;color:var(--text);cursor:pointer;border-bottom:1px solid var(--border);}
-.dd-item:last-child{border-bottom:none;}
-.dd-item:active,.dd-item.sel{background:var(--bg);color:var(--primary);}
 /* Modal */
 .modal-bg{position:fixed;inset:0;background:rgba(10,15,40,0.5);z-index:500;display:flex;align-items:center;justify-content:center;padding:20px;animation:fadeIn .18s;}
 .modal{background:var(--card);border-radius:20px;padding:24px;max-width:330px;width:100%;box-shadow:0 8px 40px rgba(0,0,0,0.2);}
 .bs-bg{position:fixed;inset:0;background:rgba(10,15,40,0.55);z-index:600;display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .18s;}
 .bs{background:var(--bg);border-radius:22px 22px 0 0;width:100%;max-width:540px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden;}
-/* Toast */
-#toast{position:fixed;bottom:76px;left:50%;transform:translateX(-50%) translateY(40px);opacity:0;border-radius:24px;font-size:13px;font-weight:700;z-index:9999;pointer-events:none;white-space:nowrap;transition:all .25s cubic-bezier(.34,1.4,.64,1);padding:9px 20px 7px;min-width:180px;text-align:center;}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 #toast .tprog{height:3px;border-radius:2px;opacity:.3;margin-top:5px;transition:width .1s linear;}
 /* PIN screen */
@@ -186,10 +157,6 @@ button:active{opacity:.8;}
 .pin-dot{width:16px;height:16px;border-radius:8px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.25);transition:background .15s;}
 .pin-dot.filled{background:#fff;}
 .pin-key{background:rgba(255,255,255,0.08);border:1.5px solid rgba(255,255,255,0.15);border-radius:13px;padding:16px 0;font-size:20px;font-weight:700;color:#fff;}
-/* Stats cards */
-.stat-card{border-radius:13px;padding:11px 12px;text-align:center;border:1.5px solid;}
-.stat-card .sv{font-size:18px;font-weight:800;margin-top:3px;}
-.stat-card .sl{font-size:10px;font-weight:600;opacity:.7;}
 /* Chart bars */
 .bar-wrap{display:flex;align-items:flex-end;gap:3px;height:80px;}
 .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;min-width:0;}
@@ -201,8 +168,6 @@ button:active{opacity:.8;}
 /* Progress bar */
 .prog-bar{background:var(--border);border-radius:4px;height:8px;overflow:hidden;}
 .prog-fill{height:100%;border-radius:4px;transition:width .5s ease;}
-/* Section header */
-.sec-hdr{font-size:11px;font-weight:800;color:var(--sub);letter-spacing:0.08em;padding:6px 0 4px;}
 /* Animations */
 @keyframes slideUp{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -235,45 +200,6 @@ button:active{opacity:.8;}
 .acc-body.open{max-height:5000px;}
 .acc-body-inner{padding:0 16px 16px;}
 
-/* ── v7 UI改善 ── */
-
-/* タブバー：アイコン大きく・ラベル見やすく */
-
-
-/* カード：余白・角丸を統一 */
-.card{background:var(--card);border:1px solid var(--border);border-radius:18px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,0.06);overflow:hidden;}
-.card-hd{padding:12px 16px;border-bottom:1px solid var(--border);background:var(--bg);display:flex;justify-content:space-between;align-items:center;min-height:46px;}
-.card-hd-title{font-size:13px;font-weight:800;display:flex;align-items:center;gap:7px;}
-.card-bd{padding:14px 16px;display:flex;flex-direction:column;gap:11px;}
-
-/* 入力欄：タップ領域を大きく */
-.inp{background:var(--bg);border:1.5px solid var(--border);border-radius:12px;padding:12px 14px;font-size:16px;color:var(--text);width:100%;transition:border-color .15s;}
-.inp-sm{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:10px 12px;font-size:15px;color:var(--text);width:100%;transition:border-color .15s;}
-.inp:focus,.inp-sm:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(58,111,232,0.1);}
-
-/* ラベル：視認性アップ */
-.lbl{font-size:11px;color:var(--sub);margin-bottom:5px;display:block;font-weight:800;letter-spacing:0.05em;}
-
-/* ボタン類：タップ領域拡大 */
-.hbtn{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:8px 14px;font-size:12px;color:var(--sub);font-weight:700;white-space:nowrap;min-height:36px;}
-.pbtn{background:linear-gradient(135deg,var(--theme1),var(--theme2));border:none;border-radius:14px;padding:15px;font-size:15px;font-weight:800;color:#fff;width:100%;min-height:50px;letter-spacing:0.03em;}
-.add-btn{background:var(--bg);border:2px dashed var(--border);border-radius:12px;padding:13px;font-size:13px;color:var(--sub);width:100%;text-align:center;min-height:46px;font-weight:600;}
-.add-btn:active{border-color:var(--primary);color:var(--primary);}
-
-/* 削除ボタン：誤タップ防止・右上に小さく */
-.del-btn{position:absolute;top:10px;right:10px;background:rgba(208,58,58,0.08);border:1.5px solid rgba(208,58,58,0.2);color:var(--red);width:30px;height:30px;border-radius:8px;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-
-/* アイテムボックス：余白改善 */
-.item-box{background:var(--bg);border:1.5px solid var(--border);border-radius:14px;padding:13px 14px;position:relative;display:flex;flex-direction:column;gap:10px;}
-
-/* サマリー行 */
-.srow{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
-.srow:last-child{border-bottom:none;}
-.sum-box{border-radius:14px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;}
-
-/* 固定保存バー */
-.save-bar{position:fixed;bottom:0;left:0;right:0;z-index:400;background:var(--card);border-top:1.5px solid var(--border);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(0,0,0,0.1);display:flex;gap:8px;max-width:540px;margin:0 auto;}
-.save-bar-inner{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:540px;z-index:415;background:var(--card);border-top:1.5px solid var(--border);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(0,0,0,0.1);display:flex;gap:8px;}
 
 /* ═══════════════════════════════════════
    UI v3: 洗練デザインシステム
@@ -359,17 +285,17 @@ button:active{opacity:.8;}
 }
 [data-theme="dark"] .tab-bar{background:rgba(26,32,56,0.72);}
 .tab-btn{
-  flex:1;display:flex;flex-direction:row;align-items:center;justify-content:center;
-  gap:5px;padding:6px 3px;background:none;border:none;
-  border-bottom:2.5px solid transparent;cursor:pointer;min-width:0;min-height:38px;
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:5px 3px;background:none;border:none;
+  border-bottom:2.5px solid transparent;cursor:pointer;min-width:0;min-height:44px;
   color:var(--muted);
   transition:all var(--tr-fast);position:relative;
 }
-.tab-btn .ticon{font-size:16px;line-height:1;transition:transform var(--tr-spring);}
-.tab-btn .tlabel{font-size:11px;font-weight:700;white-space:nowrap;display:none;}
-.tab-btn.active .tlabel{color:var(--primary);font-weight:800;display:inline;}
+.tab-btn .ticon{font-size:18px;line-height:1;transition:transform var(--tr-spring);}
+.tab-btn .tlabel{font-size:9px;font-weight:700;white-space:nowrap;display:block;opacity:0.65;letter-spacing:0.02em;}
+.tab-btn.active .tlabel{color:var(--primary);font-weight:800;display:block;opacity:1;}
 .tab-btn.active{border-bottom-color:var(--primary);color:var(--primary);}
-.tab-btn.active .ticon{transform:scale(1.15);}
+.tab-btn.active .ticon{transform:scale(1.1);}
 .tab-btn:active{opacity:.6;}
 .tab-btn:active .ticon{transform:scale(0.9);}
 
@@ -565,19 +491,7 @@ html{scroll-behavior:smooth;}
 }
 .ripple:active::after{opacity:1;transition-duration:0s;}
 
-/* もっとメニュー */
-.more-menu-bg{position:fixed;inset:0;z-index:500;background:rgba(10,15,40,0.45);animation:fadeIn .15s;}
-.more-menu{position:absolute;top:calc(100% + 4px);right:0;left:0;z-index:510;background:var(--card);border:1.5px solid var(--border);border-radius:0 0 16px 16px;box-shadow:0 8px 28px rgba(0,0,0,0.15);overflow:hidden;}
-.more-item{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;background:none;width:100%;text-align:left;}
-.more-item:last-child{border-bottom:none;}
-.more-item:active,.more-item.active{background:rgba(58,111,232,0.07);}
-.more-item-icon{font-size:18px;width:24px;text-align:center;}
-.more-item-label{font-size:13px;font-weight:700;color:var(--text);}
-.more-item.active .more-item-label{color:var(--primary);}
-
-
-
-
+/* もっとメニュー（ボトムシート） */
 .more-menu{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:540px;z-index:430;background:var(--card);border-radius:22px 22px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom));box-shadow:0 -8px 32px rgba(0,0,0,0.15);}
 .more-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
 .more-item{display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 4px;border-radius:14px;background:var(--bg);border:1.5px solid var(--border);cursor:pointer;}
@@ -589,10 +503,6 @@ html{scroll-behavior:smooth;}
 
 
 
-/* フォーカス時のキーボード対応 */
-@supports(padding: env(safe-area-inset-bottom)){
-  .save-bar-inner{padding-bottom:calc(10px + env(safe-area-inset-bottom));}
-}
 
 /* v3: フッター（美しいガラスモーフィズム） */
 .fixed-footer{
@@ -672,7 +582,7 @@ body.has-footer .page{padding-bottom:80px;}
 :root {
   --safe-top: env(safe-area-inset-top, 0px);
   --hdr-h: 40px;   /* コンパクトヘッダー本体の高さ */
-  --tab-h: 48px;   /* タブバーの高さ */
+  --tab-h: 50px;   /* タブバーの高さ */
 }
 
 html,body{
@@ -876,6 +786,44 @@ html,body{
   .coin-subtotal{font-size:10px;}
   .action-chip{font-size:10px;padding:6px 9px;}
 }
+
+/* ══════════════════════════════════════════
+   ダークモード復元 v5
+   （UI v4の白ベース !important で打ち消されていた
+     ダークテーマを、後勝ち＆高詳細度で再適用）
+   ══════════════════════════════════════════ */
+[data-theme="dark"]{
+  --bg:#0C0F1C;--bg-soft:#0F1322;--card:#1A2038;--card-2:#222A46;--card-3:#2A3252;
+  --border:#2C3556;--border-strong:#3D4870;
+  --text:#F4F6FD;--text-sub:#D6DCF0;--sub:#AFB8D6;--muted:#7F8AB0;--muted-soft:#5D6689;
+  --primary:#7DA3FF;--primary-hover:#9BB5FF;--primary2:#9A7DFF;
+  --accent:#FF7BA5;--accent2:#B38CFF;--green:#3EDB9C;--gold:#F0C765;--red:#FF7387;--cyan:#6FD9EF;--pink:#FF7BA5;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+  --shadow-md:0 2px 12px rgba(0,0,0,.45);
+  --shadow-lg:0 12px 32px rgba(0,0,0,.5);
+  --shadow-xl:0 18px 52px rgba(0,0,0,.6);
+}
+[data-theme="dark"] html,[data-theme="dark"] body{background:var(--bg);color:var(--text);}
+[data-theme="dark"] .sticky-hdr,
+[data-theme="dark"] .tab-bar,
+[data-theme="dark"] .fixed-footer{background:rgba(20,25,44,.92) !important;border-color:var(--border) !important;}
+[data-theme="dark"] #_date-inp,
+[data-theme="dark"] .hdr-inner .hbtn,
+[data-theme="dark"] .inp,
+[data-theme="dark"] .inp-sm,
+[data-theme="dark"] .dd-trigger,
+[data-theme="dark"] .coin-count-input{background:var(--card) !important;color:var(--text) !important;}
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select{background:var(--card);color:var(--text);}
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder{color:var(--muted);}
+[data-theme="dark"] .action-chip{background:var(--card) !important;color:var(--text-sub);}
+[data-theme="dark"] .coin-sheet-header{background:rgba(20,25,44,.96);}
+[data-theme="dark"] .coin-sheet-handle{background:#3D4870;}
+[data-theme="dark"] .coin-mini-section{background:var(--card) !important;}
+[data-theme="dark"] .coin-mini-title{background:var(--card-2);}
+[data-theme="dark"] .card{background:var(--card);border-color:var(--border);}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -1153,7 +1101,6 @@ function compressOldData(months){
 // ═══════════════════════════════════════
 // CONSTANTS
 // ═══════════════════════════════════════
-const MORE_TABS=[];  // 廃止 - 全タブをメインに統合
 
 // ═══════════════════════════════════════
 // STATE
@@ -5510,8 +5457,8 @@ function renderCoinSheet(){
       </div>
       <div style="padding:12px 12px calc(16px + env(safe-area-inset-bottom));overflow-y:auto">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
-          <div style="background:#fff;border:1px solid var(--border);border-radius:13px;padding:9px 10px"><div style="font-size:9px;color:var(--muted);font-weight:900">お札</div><div id="_coin-sheet-bills" style="font-size:14px;color:var(--gold);font-weight:900;text-align:right">${yen(billsTotal)}</div></div>
-          <div style="background:#fff;border:1px solid var(--border);border-radius:13px;padding:9px 10px"><div style="font-size:9px;color:var(--muted);font-weight:900">硬貨</div><div id="_coin-sheet-coins" style="font-size:14px;color:var(--gold);font-weight:900;text-align:right">${yen(coinsTotal)}</div></div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:13px;padding:9px 10px"><div style="font-size:9px;color:var(--muted);font-weight:900">お札</div><div id="_coin-sheet-bills" style="font-size:14px;color:var(--gold);font-weight:900;text-align:right">${yen(billsTotal)}</div></div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:13px;padding:9px 10px"><div style="font-size:9px;color:var(--muted);font-weight:900">硬貨</div><div id="_coin-sheet-coins" style="font-size:14px;color:var(--gold);font-weight:900;text-align:right">${yen(coinsTotal)}</div></div>
         </div>
         <div class="coin-mini-section" style="margin-bottom:10px">
           <div class="coin-mini-title"><span>📄 お札</span><span>${bills.length}種類</span></div>
@@ -5630,6 +5577,8 @@ function exitInput(){S.mode="select";render();}
 
 async function changeDate(nd){
   if(!nd)return;
+  if(nd===S.date)return;
+  commitWIP(); // 日付切替前に現在の入力を自動退避（未保存データの消失防止）
   S.date=nd;S.staff=[];S.sales=[];S.exps=[];S.actual="";S.closing={...coinDef()};
   S.ddOpen=null;S.ddCustom=null;
   const day=S.allData[nd];
@@ -5939,7 +5888,7 @@ function updateTotals(){
     u("_ff-sales", yen(c.totalSales));
     u("_ff-staff", yen(sfTot2));
     const ffDiff=document.getElementById("_ff-diff");
-    if(ffDiff){ffDiff.textContent=yenD(c.diff??0);ffDiff.style.color=diffColor2;}
+    if(ffDiff){ffDiff.textContent=c.diff===null?"—":c.diff===0?"±0":yenD(c.diff);ffDiff.style.color=diffColor2;}
   }catch(e){console.error("updateTotals",e);}
 }
 
@@ -6142,6 +6091,29 @@ function mkSnap(){
   };
 }
 
+// 入力欄に意味のある内容があるか
+function hasInputContent(){
+  try{
+    if((S.sales&&S.sales.length)||(S.staff&&S.staff.length)||(S.exps&&S.exps.length))return true;
+    if(S.actual!=null&&S.actual!=="")return true;
+    if(getCoins().some(cx=>(S.closing[cx.id]||0)>0))return true;
+  }catch(e){}
+  return false;
+}
+// 現在表示中の日付の入力をallDataへ静かに退避（日付移動や履歴読込で消えないように）
+function commitWIP(){
+  try{
+    if(!S.date||!hasInputContent())return;
+    const snap=mkSnap();
+    const existing=S.allData[S.date];
+    if(existing&&!existing._compressed&&JSON.stringify(existing)===JSON.stringify(snap))return;
+    if(existing&&existing._compressed)return; // 圧縮済みは上書きしない
+    S.allData={...S.allData,[S.date]:snap};
+    _calcCache.invalidate();
+    LS.set("ks_alldata",S.allData);
+  }catch(e){console.error("commitWIP",e);}
+}
+
 async function saveDay(){
   if(S.saving)return;
   const badSplit=S.sales.find(s=>isSaleSplit(s)&&getSaleAmount(s)>0&&getSalePaymentTotal(s)!==getSaleAmount(s));
@@ -6159,6 +6131,7 @@ async function saveDay(){
     const ok=LS.set("ks_alldata",S.allData);
     if(ok){
       LS.del("ks_draft");
+      if(navigator.vibrate)navigator.vibrate(12); // 保存完了の触覚フィードバック
       showToast("💾 "+jpDate(S.date)+" を保存しました");
     } else {
       showToast("❌ 保存に失敗しました（容量不足の可能性）",false);
@@ -6178,6 +6151,7 @@ function loadDataEntry(d){
   const day=S.allData[d];
   if(!day){showToast("データが見つかりません",false);return;}
   if(day._compressed){showToast("⚠️ このデータは圧縮済みです（集計値のみ保持）",false);return;}
+  if(d!==S.date)commitWIP(); // 別日の読込前に現在の入力を退避
   S.date=d;
   applyDay(day);
   S.tab="r";
@@ -7856,134 +7830,6 @@ async function exportStaffXlsx(period){
   showToast('📊 プロ仕様Excel出力（'+names.length+'名・'+(names.length+1)+'シート）');
 }
 
-// ── スタッフ別成績 Excelファイル（xlsx）出力（旧SheetJS版・非推奨） ──
-function exportStaffXlsxLegacy(period){
-  if(typeof XLSX==='undefined'){showToast('❌ ライブラリが読み込まれていません。オンラインで使用してください',false);return;}
-
-  const{s0,e0}=getPeriodRange(period||S.perfPeriod||'month','','');
-  const periodLabel={month:'今月',prev:'先月',week:'直近7日'}[period||S.perfPeriod||'month']||'期間';
-  const shopName=S.settings.shopName||'城SHIRO';
-  const DAYS='日月火水木金土';
-  const douhanRate=(S.settings.douhanRate||0)/100;
-
-  const{data:perf}=calcStaffPerformance(period||S.perfPeriod||'month');
-  const names=Object.keys(perf).sort((a,b)=>perf[b].sales-perf[a].sales);
-
-  if(!names.length){showToast('❌ データがありません',false);return;}
-
-  const wb=XLSX.utils.book_new();
-
-  // 各スタッフを1シートに
-  names.forEach(staffName=>{
-    const r=perf[staffName];
-    const days=Object.entries(S.allData)
-      .filter(([d])=>d>=s0&&d<=e0)
-      .sort(([a],[b])=>a>b?1:-1);
-
-    // サマリー行
-    const summaryData=[
-      ['スタッフ名',staffName],
-      ['期間',s0+' 〜 '+e0],
-      ['店舗',shopName],
-      [],
-      ['【月間サマリー】'],
-      ['担当売上','出勤日数','稼働時間','時給分給与','歩合・バック','同伴件数','指名回数','DK','分配率'],
-      [r.sales,r.workDays,r.totalHours,r.totalPay,(r.nomBonus+r.douhanBonus+r.drinkBonus+r.helpBonus),r.douhanCount,r.nomCount,r.drinkCount,r.shareRate+'%'],
-      [],
-      ['【出勤日別明細】'],
-      ['日付','曜日','お客様','担当売上','時給分','指名歩合','同伴バック'],
-    ];
-
-    // 日別データ
-    days.forEach(([d,dd])=>{
-      const st=(dd.staff||[]).find(s=>s.name===staffName);
-      if(!st)return;
-      const dt=new Date(d+'T00:00:00');
-      const dateStr=dt.getFullYear()+'/'+(dt.getMonth()+1)+'/'+dt.getDate();
-      const dayStr=DAYS[dt.getDay()];
-      const det=calcStaffPayDetail(st,dd.sales||[]);
-      const sa=getStaffSaleAmount(staffName,dd.sales||[]);
-
-      // 会計別
-      const saleDetails=[];
-      (dd.sales||[]).forEach(sale=>{
-        const es=getSaleStaffEntries(sale);
-        const shares=calcShareAmounts(es,getSaleAmount(sale));
-        const ei=es.findIndex(e=>e.staffName===staffName);
-        if(ei<0)return;
-        const share=shares[ei]||0;
-        const custs=getSaleCustomers(sale).map(c=>c.name).filter(Boolean).join('・')||'—';
-        saleDetails.push({custs,share});
-      });
-
-      if(saleDetails.length===0){
-        summaryData.push([dateStr,dayStr,'—',sa,det.handPay,det.nomBonus||'',det.douhanBonus||'']);
-      } else {
-        saleDetails.forEach((sd,i)=>{
-          if(i===0){
-            summaryData.push([dateStr,dayStr,sd.custs,sd.share,det.handPay,det.nomBonus||'',det.douhanBonus||'']);
-          } else {
-            summaryData.push(['','',sd.custs,sd.share,'','','']);
-          }
-        });
-      }
-    });
-
-    // 同伴履歴
-    const douhanList=[];
-    days.forEach(([d,dd])=>{
-      (dd.sales||[]).forEach(sale=>{
-        const es=getSaleStaffEntries(sale);
-        const shares=calcShareAmounts(es,getSaleAmount(sale));
-        es.filter(e=>e.staffName===staffName&&e.douhan).forEach((e,_,arr)=>{
-          const ei=es.indexOf(e);
-          const share=shares[ei]||0;
-          const bonus=e.douhanBonus!=null&&e.douhanBonus!==''?(+e.douhanBonus||0):Math.floor(share*douhanRate);
-          const custs=getSaleCustomers(sale).map(c=>c.name).filter(Boolean).join('・')||'—';
-          const dt=new Date(d+'T00:00:00');
-          douhanList.push([dt.getFullYear()+'/'+(dt.getMonth()+1)+'/'+dt.getDate(),DAYS[dt.getDay()],custs,share,bonus]);
-        });
-      });
-    });
-
-    if(douhanList.length){
-      summaryData.push([]);
-      summaryData.push(['【同伴履歴】']);
-      summaryData.push(['日付','曜日','お客様','担当売上','同伴バック']);
-      douhanList.forEach(row=>summaryData.push(row));
-    }
-
-    const ws=XLSX.utils.aoa_to_sheet(summaryData);
-    // 列幅設定
-    ws['!cols']=[{wch:12},{wch:5},{wch:18},{wch:12},{wch:12},{wch:12},{wch:12}];
-    // シート名はスタッフ名（31文字以内・特殊文字除去）
-    const sheetName=staffName.replace(/[\/\\\?\*\[\]]/g,'').slice(0,31);
-    XLSX.utils.book_append_sheet(wb,ws,sheetName);
-  });
-
-  // 全員サマリーシートを先頭に追加
-  const summarySheet=[
-    ['城SHIRO スタッフ成績サマリー'],
-    ['期間：'+s0+' 〜 '+e0+'　（'+periodLabel+'）'],
-    [],
-    ['名前','担当売上','分配率','出勤日数','指名','同伴','DK','時給分給与','歩合・バック計','月間合計'],
-  ];
-  names.forEach(n=>{
-    const r=perf[n];
-    const back=r.nomBonus+r.douhanBonus+r.drinkBonus+r.helpBonus;
-    const total=r.totalPay+back+r.bonus-r.advance-r.penalty;
-    summarySheet.push([n,r.sales,r.shareRate+'%',r.workDays+'日',r.nomCount+'回',r.douhanCount+'件',r.drinkCount+'杯',r.totalPay,back,total]);
-  });
-  const wsSummary=XLSX.utils.aoa_to_sheet(summarySheet);
-  wsSummary['!cols']=[{wch:10},{wch:12},{wch:8},{wch:8},{wch:6},{wch:6},{wch:6},{wch:12},{wch:12},{wch:12}];
-  XLSX.utils.book_append_sheet(wb,wsSummary,'全員サマリー');
-  // 全員サマリーを先頭に移動
-  wb.SheetNames=[wb.SheetNames[wb.SheetNames.length-1],...wb.SheetNames.slice(0,-1)];
-
-  const fileName=shopName+'_スタッフ成績_'+periodLabel+'_'+s0+'〜'+e0+'.xlsx';
-  XLSX.writeFile(wb,fileName);
-  showToast('📊 Excelファイルを出力しました（'+names.length+'名・'+(names.length+1)+'シート）');
-}
 
 function importBottleCSV(input){
   const file=input.files[0];if(!file)return;
@@ -8820,6 +8666,7 @@ function loadDayData(d){
   const dd=S.allData[d];
   if(!dd){showToast("データなし",false);return;}
   if(!confirm(jpDate(d)+"のデータを読み込みますか?\n現在の入力内容は上書きされます。")){return;}
+  if(d!==S.date)commitWIP();
   S.date=d;
   applyDay(dd);
   S.tab="r";
